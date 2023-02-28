@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import os
+os.system('cd ..')
 
 def test_fun(filename):
     with open(filename, "x") as f:
