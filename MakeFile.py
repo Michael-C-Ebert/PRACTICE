@@ -9,4 +9,3 @@ try:
     test_fun("~/home/mikeyebert2004/testdir/testfile.txt")
 except:
     print(os.system('pwd'))
-
