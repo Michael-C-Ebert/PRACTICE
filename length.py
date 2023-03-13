@@ -1,5 +1,5 @@
-#!/usr/env/bin python3
+#!/usr/bin/env python3
 
-TestSTR = "test"
+STR = input("Please give a word, phrase, or sentence.")
 
-print(len(TestSTR))
+print(len(STR))
