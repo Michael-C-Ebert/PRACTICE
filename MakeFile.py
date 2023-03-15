@@ -14,4 +14,5 @@ def test_fun(filename):
     else:
         print("File already exists")
 
-test_fun("/home/mikeyebert2004/testdir/testfile.txt")
+f = input("What's the file's name?: ")
+test_fun(f)
