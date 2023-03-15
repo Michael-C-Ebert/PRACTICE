@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-STR = input("Please give a word, phrase, or sentence.")
+STR = input("Please give a word, phrase, or sentence: ")
 
 unallowed = "' ?/![]{}()*&^%$#@=+-_;:.,/" + '"'
 counter = 0
