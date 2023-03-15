@@ -2,4 +2,11 @@
 
 STR = input("Please give a word, phrase, or sentence.")
 
-print(len(STR))
+unallowed = "' ?/![]{}()*&^%$#@=+-_;:.,/" + '"'
+counter = 0
+
+for char in STR:
+    if char in unallowed:
+        counter += 1
+
+print(len(STR)-counter)
