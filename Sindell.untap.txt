@@ -1,0 +1,38 @@
+//deck-1
+1 For Sale Sign
+2 Abomination Tomb
+1 Time Flash Portal
+2 Kelellion
+1 Ghatomic Ghi
+1 Universe Boundary LOC
+1 Skeleghast
+1 Planetary Field
+2 Skelepede
+1 Mystical Relic - Phantasmal Spoons
+1 Pointurret
+2 Activation Activated Activator
+2 Thorngabork
+1 Phantom Matter
+1 Galaxy Crash
+2 Wakooman
+2 Demoknight LOC
+2 Bonbeak
+1 Pelfam
+2 Dark-Spark Diabolus
+1 Cerberam of Sindell
+2 Bone Ladder
+1 Beast Of The Black Hole
+1 Beast of the Conjurers
+
+//sideboard-1
+2 Chroarok Comet
+2 Kalamask
+2 Temmagrob
+
+//pile-expel
+2 "Creature Zone" by Man with a Mission
+2 "Battle Zone" by Ozzy Osbourne
+2 "Resource Zone" by Shinedown
+
+//play-1
+1 Sindell
