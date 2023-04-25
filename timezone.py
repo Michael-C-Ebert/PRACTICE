@@ -4,7 +4,11 @@ CST_hour = int(input("Enter the CST hour here: "))
 CST_minutes = int(input("Enter the CST minutes here: "))
 timezones = ["CST", "CET", "BST", "UTC+3"]
 time_stamps = {"timezone":"time"}
-minutes = ":" + str(CST_minutes)
+
+if CST_minutes < 10: 
+    minutes = ":" + "0" + str(CST_minutes)
+else:
+    minutes = ":" + str(CST_minutes)
 
 CST_time = str(CST_hour) + minutes
 time_stamps["CST time"] = CST_time
@@ -19,4 +23,4 @@ UTC3_time = str(CST_hour+8) + minutes
 time_stamps["UTC+3 time"] = UTC3_time
 
 for item in time_stamps:
-    print(item)
+    print(item + "---" + time_stamps[item])
