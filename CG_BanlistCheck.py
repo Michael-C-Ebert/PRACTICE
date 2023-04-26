@@ -15,11 +15,18 @@ with open(decklist) as deck:
         quantity = line[0]
         card_dict[cardname] = quantity
 
+legality = 0
 for card in card_dict:
     if int(card_dict[card]) > 2:
+        legality -= 1
         print("You have "+card_dict[card]+"copies of "+card)
     elif card in banned:
+        legality -= 1
         print(card+" is banned!")
     elif card in half_banned:
         if int(card_dict[card]) > 1:
-            print(card+" is HALF-banned!"
+            legality -= 1
+            print(card+" is HALF-banned!")
+
+if legality == 0:
+    print("Deck is legal")
