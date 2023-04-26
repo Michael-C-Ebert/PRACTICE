@@ -2,6 +2,8 @@
 
 decklist = input("Which decklist would you like to scan?: ")
 card_dict = {}
+banned = ["Bernard the Space Worm", "Cosmic Treasure", "Cosmic Treasure LOC", "Dark Space Eater", "Parallel Universe", "Slush Infestation", "shockwave 5"]
+half_banned = ["Combine Harvester", "Pelfam", "Skeleghast", "Galaxy Crash", "Mystical Relic - Phantasmal Spoons", "For Sale Sign", "Phantom Matter", "Warphole Jetpack", "Beast of the Black Hole", "Planetary Field", "Pointurret", "Leviathan Crown"]
 
 with open(decklist) as deck:
     cards = deck.readlines()
@@ -13,4 +15,11 @@ with open(decklist) as deck:
         quantity = line[0]
         card_dict[cardname] = quantity
 
-print(card_dict)
+for card in card_dict:
+    if int(card_dict[card]) > 2:
+        print("You have "+card_dict[card]+"copies of "+card)
+    elif card in banned:
+        print(card+" is banned!")
+    elif card in half_banned:
+        if int(card_dict[card]) > 1:
+            print(card+" is HALF-banned!"
